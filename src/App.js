@@ -1,14 +1,17 @@
 import './App.css';
+// 3. import Button from bootstrap
 import Button from 'react-bootstrap/Button'
+// 4. import Navbar from bootstrap 
 import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
+// 5. import Form
 import Form from 'react-bootstrap/Form'
-
 
 function App() {
   return (
     <div className="App">
       <h1>Bootstrap Website</h1>
+      {/* 4. NavBar  */}
       <Nav fill variant="tabs" defaultActiveKey="/home" >
         <Nav.Item>
           <Nav.Link href="/home">Home</Nav.Link>
@@ -23,6 +26,7 @@ function App() {
       <br />
 
       <Container>
+        {/* 5. Form */}
         <Form> 
 
           <Form.Group controlId="formBasicEmail">
@@ -38,6 +42,7 @@ function App() {
             <Form.Control type="password" placeholder="Password" />
           </Form.Group>
           
+          {/* 5. FormControl  Dropdown */}
           <Form.Group>
             <Form.Label>Form Dropdown with favorite movies</Form.Label>
             <Form.Control as="select">
